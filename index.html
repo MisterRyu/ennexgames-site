@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ennex Games Hub</title>
+  <meta
+    name="description"
+    content="A calm creative studio hub for Ennex Games projects, music, and thoughtful launches."
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#spotlight" class="brand">Ennex Games</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" id="siteNav">
+        <a href="#spotlight">Home</a>
+        <a href="#featured">Featured</a>
+        <a href="#footer">Contact</a>
+      </nav>
+      <a class="button button-tertiary header-cta" href="#footer">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="spotlight" class="spotlight">
+      <div class="container spotlight-area">
+        <div class="spotlight-header">
+          <div>
+            <p class="eyebrow">studio spotlight</p>
+            <h2>A cinematic sequence of calm studio moments.</h2>
+          </div>
+          <nav class="spotlight-links" aria-label="Spotlight navigation">
+            <button type="button" class="spotlight-link" data-scene="0">Studio Window</button>
+            <button type="button" class="spotlight-link" data-scene="1">Dream Light</button>
+            <button type="button" class="spotlight-link" data-scene="2">Current Work</button>
+          </nav>
+        </div>
+
+        <div class="spotlight-frame">
+          <button type="button" class="scene-arrow scene-arrow--prev" aria-label="Previous scene">←</button>
+          <div class="scene-strip">
+            <article class="scene scene--home">
+              <div class="scene-panel">
+                <p class="eyebrow">Studio window</p>
+                <h1>Studio window.</h1>
+                <p>A quiet space for games, music, and thoughtful launches. Move through this calm studio moment and explore the current work in a cinematic flow.</p>
+                <div class="scene-actions">
+                  <a class="button button-primary" href="#featured">Explore the studio</a>
+                  <a class="button button-secondary" href="#featured">View release</a>
+                </div>
+              </div>
+              <div class="scene-visual">
+                <div class="scene-panel-card">
+                  <span class="card-badge">Warm window</span>
+                  <h2>Ennex Games</h2>
+                  <p>Handcrafted studio moments, editorial pacing, and a warm dark palette that feels cinematic.</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="scene scene--dream">
+              <div class="scene-panel">
+                <p class="eyebrow">Featured release</p>
+                <h1>Dream Light</h1>
+                <p>A lofi music video from Ennex Games — the latest calm release with a sunset-tinged mood and soft rhythm.</p>
+                <div class="scene-actions">
+                  <a class="button button-primary" href="https://youtu.be/micosEtVuUI" target="_blank" rel="noreferrer">Watch on YouTube</a>
+                  <span class="scene-note">Music, visuals, studio release.</span>
+                </div>
+              </div>
+              <div class="scene-visual">
+                <div class="scene-embed-card">
+                  <div class="embed-thumbnail">Dream Light</div>
+                  <p class="scene-embed-copy">A studio release built for late-night focus, soft scenery, and low-key audio.</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="scene scene--work">
+              <div class="scene-panel">
+                <p class="eyebrow">Current work</p>
+                <h1>Active projects</h1>
+                <p>Three major studio moments are shaping the next chapter: the Astra mobile app, the Dream Light release, and this Ennex hub experiment.</p>
+                <div class="scene-actions">
+                  <a class="button button-secondary" href="../astra-mobile" target="_blank">Open Astra</a>
+                  <span class="scene-note">Project preview tiles below.</span>
+                </div>
+              </div>
+              <div class="scene-visual scene-project-grid">
+                <div class="scene-tile">
+                  <p class="card-tag">Astra Mobile</p>
+                  <h3>Astra App</h3>
+                  <p>Audio-led mobile tooling for imaginative studio experiments.</p>
+                </div>
+                <div class="scene-tile">
+                  <p class="card-tag">Dream Light</p>
+                  <h3>Lofi release</h3>
+                  <p>Calm visuals and soft music delivered as a cinematic studio experience.</p>
+                </div>
+                <div class="scene-tile">
+                  <p class="card-tag">Ennex Hub</p>
+                  <h3>Studio home</h3>
+                  <p>A quiet hub for current work, links, and the next launch rhythm.</p>
+                </div>
+              </div>
+            </article>
+          </div>
+          <button type="button" class="scene-arrow scene-arrow--next" aria-label="Next scene">→</button>
+        </div>
+
+        <div class="scene-dots" aria-label="Scene indicators">
+          <button type="button" class="scene-dot active" data-scene="0" aria-label="Studio Window scene"></button>
+          <button type="button" class="scene-dot" data-scene="1" aria-label="Dream Light scene"></button>
+          <button type="button" class="scene-dot" data-scene="2" aria-label="Current Work scene"></button>
+        </div>
+      </div>
+    </section>
+
+    <section id="featured" class="section featured-release">
+      <div class="container featured-release-card">
+        <div class="featured-release-copy">
+          <p class="eyebrow">Featured release</p>
+          <h2>Dream Light • lofi music video</h2>
+          <p>A calm visual and audio story from Ennex Games — the latest studio release with sunset gradients, soft detail, and a cinematic mood.</p>
+        </div>
+        <div class="featured-release-video">
+          <div class="embed-frame">
+            <iframe
+              src="https://www.youtube.com/embed/micosEtVuUI"
+              title="Dream Light Lofi Music Video"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer" class="site-footer">
+    <div class="container footer-inner">
+      <p>Ennex Games is a quiet studio for handcrafted games, music, and connected creative work.</p>
+      <div class="footer-links">
+        <a href="https://youtu.be/micosEtVuUI" target="_blank" rel="noreferrer">YouTube</a>
+        <a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="#spotlight">Home</a>
+        <a href="#footer">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
