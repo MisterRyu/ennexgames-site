@@ -37,16 +37,16 @@
             <h2>A cinematic sequence of calm studio moments.</h2>
           </div>
           <nav class="spotlight-links" aria-label="Spotlight navigation">
-            <button type="button" class="spotlight-link" data-scene="0">Studio Window</button>
-            <button type="button" class="spotlight-link" data-scene="1">Dream Light</button>
-            <button type="button" class="spotlight-link" data-scene="2">Current Work</button>
+            <button type="button" class="spotlight-link" data-scene="0" aria-controls="scene-0">Studio Window</button>
+            <button type="button" class="spotlight-link" data-scene="1" aria-controls="scene-1">Dream Light</button>
+            <button type="button" class="spotlight-link" data-scene="2" aria-controls="scene-2">Current Work</button>
           </nav>
         </div>
 
         <div class="spotlight-frame">
-          <button type="button" class="scene-arrow scene-arrow--prev" aria-label="Previous scene">←</button>
-          <div class="scene-strip">
-            <article class="scene scene--home">
+          <button type="button" class="scene-arrow scene-arrow--prev" aria-label="Previous scene" aria-controls="scene-strip">←</button>
+          <div class="scene-strip" id="scene-strip">
+            <article class="scene scene--home" id="scene-0">
               <div class="scene-panel">
                 <p class="eyebrow">Studio window</p>
                 <h1>Studio window.</h1>
@@ -65,7 +65,7 @@
               </div>
             </article>
 
-            <article class="scene scene--dream">
+            <article class="scene scene--dream" id="scene-1">
               <div class="scene-panel">
                 <p class="eyebrow">Featured release</p>
                 <h1>Dream Light</h1>
@@ -83,13 +83,14 @@
               </div>
             </article>
 
-            <article class="scene scene--work">
+            <article class="scene scene--work" id="scene-2">
               <div class="scene-panel">
                 <p class="eyebrow">Current work</p>
                 <h1>Active projects</h1>
                 <p>Three major studio moments are shaping the next chapter: the Astra mobile app, the Dream Light release, and this Ennex hub experiment.</p>
                 <div class="scene-actions">
-                  <a class="button button-secondary" href="../astra-mobile" target="_blank">Open Astra</a>
+                  <!-- TODO: Enable Astra link once project is deployed to GitHub Pages. Currently a sibling path that won't resolve in GH Pages. -->
+                  <button class="button button-secondary" disabled title="Astra link coming soon">Open Astra</button>
                   <span class="scene-note">Project preview tiles below.</span>
                 </div>
               </div>
@@ -112,13 +113,13 @@
               </div>
             </article>
           </div>
-          <button type="button" class="scene-arrow scene-arrow--next" aria-label="Next scene">→</button>
+          <button type="button" class="scene-arrow scene-arrow--next" aria-label="Next scene" aria-controls="scene-strip">→</button>
         </div>
 
         <div class="scene-dots" aria-label="Scene indicators">
-          <button type="button" class="scene-dot active" data-scene="0" aria-label="Studio Window scene"></button>
-          <button type="button" class="scene-dot" data-scene="1" aria-label="Dream Light scene"></button>
-          <button type="button" class="scene-dot" data-scene="2" aria-label="Current Work scene"></button>
+          <button type="button" class="scene-dot active" data-scene="0" aria-label="Studio Window scene" aria-controls="scene-0"></button>
+          <button type="button" class="scene-dot" data-scene="1" aria-label="Dream Light scene" aria-controls="scene-1"></button>
+          <button type="button" class="scene-dot" data-scene="2" aria-label="Current Work scene" aria-controls="scene-2"></button>
         </div>
       </div>
     </section>
@@ -150,7 +151,7 @@
       <p>Ennex Games is a quiet studio for handcrafted games, music, and connected creative work.</p>
       <div class="footer-links">
         <a href="https://youtu.be/micosEtVuUI" target="_blank" rel="noreferrer">YouTube</a>
-        <a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://github.com/MisterRyu/ennexgames-site" target="_blank" rel="noreferrer">GitHub</a>
         <a href="#spotlight">Home</a>
         <a href="#footer">Contact</a>
       </div>
